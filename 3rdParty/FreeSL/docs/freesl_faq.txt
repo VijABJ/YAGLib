@@ -1,0 +1,21 @@
+FreeSL FAQ (last updated: 2006-09-06)
+=====================================
+
+Q: Why is no sound playing?
+A: The most common reason for this is that you are using another version of OpenAL
+   than version 1.1. OpenAL DLL are included together with FreeSL, use those DLL files.
+
+Q: I try to stream a sound but it doesnt play for more than one second?
+A: You are not calling "fslUpdate" as often as you should. How often you should call
+   "fslUpdate" depends on the file and what rate it is on. You can also call
+   "fslSetAutoUpdate(true)" so that you do not have to call "fslUpdate" yourself.
+
+Q: I have a question about FreeSL, who should I ask?
+A: You can e-mail me (axodoss@hotmail.com) the question. I always try to answer
+   as fast as I can.
+
+Q: Why is there no MP3 support in FreeSL?
+A: MP3 is not free (http://www.mp3licensing.com/). If you have the money for the license
+   then perhaps you would be more interested in a library like Fmod (http://www.fmod.org/)
+   or the Miles Sound System (http://www.radgametools.com/miles.htm).
+
